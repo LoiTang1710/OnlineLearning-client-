@@ -5,7 +5,7 @@ export interface UserType {
     password: string,
 }
 export interface LoginPayload {
-    email: string,
+    identifier: string,
     password: string,
 }
 export interface RegisterPayload {
