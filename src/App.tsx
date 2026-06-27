@@ -2,10 +2,12 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { Login, Register } from "./modules/auth/index.tsx";
 import { Home } from "./modules/home/index.tsx";
 import { Providers } from "./providers/Providers.tsx";
+import { Toaster } from "sonner";
 
 const RootLayout = () => {
   return (
     <Providers>
+      <Toaster/>
       <Outlet/>
     </Providers>
   )

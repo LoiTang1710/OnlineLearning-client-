@@ -1,11 +1,12 @@
-:root {
-  @media (max-width: 1024px) {
-  }
+@import "tailwindcss";
+@theme {
+  --color-primary: #7fbeeb;
+  --color-secondary: #e1f0ff;
+  --color-tertiary: #2d4b63;
+  --color-neutral: #64748b;
 }
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
+    @apply bg-secondary;
   }
-
-   
 }
