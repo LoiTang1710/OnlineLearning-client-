@@ -34,8 +34,9 @@ export const useRegister = () => {
     onSuccess: () => {
       navigate("/login");
     },
-    onError: (error) => {
-      console.error("Register failed: ", error);
+    onError: (error: AxiosError<{message: string}>) => {
+      const serverLog = error.response?.data?.message || error.message
+      console.error(serverLog)
     },
   });
 };
