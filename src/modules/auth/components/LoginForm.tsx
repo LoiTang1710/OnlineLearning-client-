@@ -9,6 +9,7 @@ const LoginForm = () => {
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const { mutate: LoginMutate, isPending } = useLogin();
+
   const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
     setErrorMessage(null);
@@ -56,7 +57,7 @@ const LoginForm = () => {
             }}
             className="bg-secondary/70 p-3 w-full rounded-xl border border-primary/30 text-neutral"
           />
-          <div className="flex justify-end text-[14px] mr-1 text-tertiary">
+          <div className="flex justify-end text-[14px] mr-1 text-tertiary hover:underline hover:underline-offset-4">
             <Link to={"/"}>Quên mật khẩu?</Link>
           </div>
         </div>
@@ -76,7 +77,7 @@ const LoginForm = () => {
         </div>
         <div className="flex gap-1 text-sm justify-center">
           <p>Chưa có tài khoản?</p>
-          <Link to={"/register"} className="text-tertiary font-bold underline">
+          <Link to={"/register"} className="text-tertiary font-bold underline underline-offset-5">
             Đăng ký ngay
           </Link>
         </div>

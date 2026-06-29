@@ -178,7 +178,7 @@ const RegisterForm = () => {
           </Button>
           <div className="flex gap-1 text-sm justify-center">
             <p>Đã có tài khoản?</p>
-            <Link to={"/login"} className="text-tertiary font-bold underline">
+            <Link to={"/login"} className="text-tertiary font-bold underline underline-offset-5">
               Đăng nhập
             </Link>
           </div>
