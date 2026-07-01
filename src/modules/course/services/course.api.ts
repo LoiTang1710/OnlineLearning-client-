@@ -8,7 +8,7 @@ export const CourseApi = {
     },
     getAll: async() => {
         const response = await AxiosApi.get('/course')
-        return response.data
+        return response.data.courses
     },
     delete: async() => {
 
