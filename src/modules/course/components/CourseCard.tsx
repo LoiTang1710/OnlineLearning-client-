@@ -19,7 +19,7 @@ const CourseCard = () => {
               <img
                 // Thay bằng field ảnh thực tế từ API (vd: course.thumbnail), ở đây dùng placehold làm fallback
                 src={
-                  "https://placehold.co/600x400/2d4b63/FFF?text=Course+Image"
+                 `${import.meta.env.VITE_MEDIA_URL}${course.imageUrl}` 
                 }
                 alt={course.title}
                 className="w-full h-full object-cover"

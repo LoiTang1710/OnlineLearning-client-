@@ -1,5 +1,6 @@
 import { CourseCard } from "../../course/index.tsx";
 
+
 const HomePage = () => {
   return (
     <div>
@@ -31,8 +32,9 @@ const HomePage = () => {
               quả và đầy cảm hứng.
             </p>
           </div>
-          <div className="w-1/2 bg-primary">
-            <div className="">Avatar</div>
+          {/* Chèn model gif ở đây */}
+          <div className="w-1/2 flex items-center justify-center relative group">
+            
           </div>
         </div>
       </div>

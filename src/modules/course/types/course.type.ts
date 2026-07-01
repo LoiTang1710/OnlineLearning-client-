@@ -2,6 +2,7 @@ export interface CourseResponse  {
     id: number,
     title: string,
     description: string
+    imageUrl: string
 }
 export interface CoursePayload {
     title: string,
