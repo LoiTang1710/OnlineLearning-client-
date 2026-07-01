@@ -1,5 +1,6 @@
 import type React from "react";
-import { cn } from "../utils/cn.ts";
+import { cn } from "../lib/utils.ts";
+
 
 const buttonVariants = {
   primary: "bg-primary text-white hover:bg-tertiary",
