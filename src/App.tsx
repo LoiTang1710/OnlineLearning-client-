@@ -4,9 +4,10 @@ import { Home } from "./modules/home/index.tsx";
 import { Providers } from "./providers/Providers.tsx";
 import { Toaster } from "sonner";
 
-import { SidebarProvider, SidebarTrigger } from "./components/ui/sidebar.tsx";
+import { SidebarProvider } from "./components/ui/sidebar.tsx";
 import { AppSidebar } from "./components/AppSidebar.tsx";
 import { TooltipProvider } from "./components/ui/tooltip.tsx";
+import CoursePage from "./modules/course/pages/CoursePage.tsx";
 
 
 const GlobalLayout = () => {
@@ -25,7 +26,7 @@ const MainLayout = () => {
         <AppSidebar />
         {/* Bao bọc Outlet bằng main để dễ quản lý flex/width với sidebar */}
         <main className="flex-1 w-full relative">
-          <SidebarTrigger className="absolute top-4 left-4" />
+          {/* <SidebarTrigger className="absolute top-4 left-4" /> */}
           <Outlet />
         </main>
       </TooltipProvider>
@@ -53,7 +54,10 @@ const router = createBrowserRouter([
             index: true, // Dùng index: true thay vì path: "/" cho trang mặc định
             element: <Home />,
           },
-        
+          {
+            path: '/course',
+            element: <CoursePage/>
+          }
         ],
       },
       {

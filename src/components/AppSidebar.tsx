@@ -25,8 +25,8 @@ import {
 const data = {
   mainNav: [
     { title: "Trang chủ", url: "/", icon: LayoutGrid },
-    { title: "Khoá học", url: "/courses", icon: GraduationCap },
-    { title: "Chatbot", url: "/patterns", icon: Sparkles },
+    { title: "Khoá học", url: "/course", icon: GraduationCap },
+    { title: "Chatbot", url: "/pattern", icon: Sparkles },
     { title: "Lập kế hoạch với AI", url: "/planner", icon: BrainCircuit },
     { title: "Cộng đồng", url: "/community", icon: Users },
   ],

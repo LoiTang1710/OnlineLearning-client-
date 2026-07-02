@@ -1,4 +1,6 @@
+import TextType from "@/components/animation/TextType.tsx";
 import { CourseCard } from "../../course/index.tsx";
+
 
 
 const HomePage = () => {
@@ -18,13 +20,18 @@ const HomePage = () => {
         />
         {/* Your Content/Components */}
         <div className="absolute w-full z-10 p-10 flex">
-          <div className="flex flex-col gap-3 w-1/2">
+          <div className="flex flex-col gap-3">
             <div className="rounded-full px-2 py-1 w-fit bg-primary/10 border border-primary text-sm text-primary">
               Học tập & rèn luyện
             </div>
-            <h1 className="text-7xl font-bold max-w-2xl leading-tight tracking-tighter">
-              Chinh phục học tập,{" "}
-              <span className="text-blue-600"> làm chủ lập trình</span>
+            <h1 className="text-7xl font-bold w-full leading-tight tracking-tighter">
+              Chinh phục học <br/> tập,{" "}
+              <TextType
+                text={"làm chủ lập trình"}
+                typingSpeed={125}
+                cursorCharacter="_"
+                className="text-blue-600 block whitespace-nowrap mt-2"
+              />
             </h1>
             <p className="line-clamp-5 max-w-lg text-neutral leading-snug tracking-tighter text-lg [word-spacing: 0.2em]">
               Đồng hành cùng sinh viên trên hành trình từ những dòng code đầu
@@ -33,9 +40,7 @@ const HomePage = () => {
             </p>
           </div>
           {/* Chèn model gif ở đây */}
-          <div className="w-1/2 flex items-center justify-center relative group">
-            
-          </div>
+          {/* <div className="w-1/2 flex items-center justify-center relative group"></div> */}
         </div>
       </div>
       <div className="pt-10">
